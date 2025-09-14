@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260">
+  <!-- main branch -->
+  <path d="M100 220 C200 160, 320 120, 480 60" 
+        stroke="#b56b8a" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- blossoms along main branch -->
+  <circle cx="180" cy="170" r="11" fill="#ffcce0"/>
+  <circle cx="250" cy="140" r="9"  fill="#ffd6e8"/>
+  <circle cx="320" cy="110" r="10" fill="#ffb3d9"/>
+  <circle cx="400" cy="80"  r="12" fill="#ffd6e8"/>
+
+  <!-- sub-branch 1 (center-left, attached at 220,150) -->
+  <path d="M360 100 C380 90, 390 70, 400 50"
+        stroke="#b56b8a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="180" cy="190" r="7" fill="#ffe6f0"/>
+  <circle cx="270" cy="115" r="6" fill="#ffddea"/>
+
+  <!-- sub-branch 2 (top-right, attached at 360,100) -->
+  <path d="M360 100 C380 90, 390 70, 400 50"
+        stroke="#b56b8a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="370" cy="85" r="6" fill="#ffe6f0"/>
+  <circle cx="390" cy="65" r="7" fill="#ffb3d9"/>
+
+  
+  <!-- loose petals -->
+  <ellipse cx="280" cy="200" rx="8" ry="5" fill="#ffddea" transform="rotate(-20 280 200)" opacity="0.8"/>
+  <ellipse cx="420" cy="160" rx="7" ry="4" fill="#ffe6f0" transform="rotate(15 420 160)" opacity="0.8"/>
+  <ellipse cx="200" cy="230" rx="8" ry="6" fill="#ffb3d9" transform="rotate(-15 200 230)" opacity="0.85"/>
+</svg>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba TEa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+ <div id="petal-container"></div>
+    <section class="home" id="home">
+       <div class="navbar"> 
+
+        <div class="logo"> 
+            <a href="#home" class="brand">
+                <img src="logo.png" alt="Tapioca Tales Logo" class="brand-logo">
+                <span class="brand-name">Tapioca Tales</span>
+            </a>
+        </div>
+        <nav class="navigation" >
+          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#menu" class="nav-item">Menu</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+
+
+
+        <div class="hero-content">
+            <span class="p1">🌸Handcrafted with love</span>
+            <h1 class="hero-title">Tapioca Tales</h1>
+            <p class="hero-subtitle">Sip happiness in every bubble🫧</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">🧋 Explore Flavours</a>
+                <a href="#menu" class="btn btn-secondary"><i class='fas fa-shopping-bag'></i>  Order now</a>
+            </div>
+            
+        </div>
+    
+        <div class="hero-image">
+            <img src="Sakura.svg" alt="" class="hero-img">
+          </div>  
+</section>
+
+
+
+
+
+<div class="cart-sidebar" id="cart-sidebar">
+  <h3>Your Cart</h3>
+  <div class="cart-items" id="cart-items"></div>
+  <img src="sadbiba-removebg-preview.png" alt="Empty Cart" class="empty-cart-image" id="empty-cart-image">
+  <div class="cart-footer">
+    <p id="cart-subtotal">Subtotal: $0.00</p>
+    <div class="cart-buttons">
+      <button class="continue-btn" id="continue-btn">Continue Shopping</button>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+<div id="toast"></div>
+
+ 
+
+
+
+
+
+
+<section class="menu" id="menu">
+  <div class="section-header">
+    <h3>🌸</h3>
+    <div class="header-text">
+      <h2>Flavours</h2>
+      <p class="subtitle">Discover our sakura-inspired selections</p>
+    </div>
+    <div class="cart-container" id="cart-btn">
+      <span class="cart-icon">🛒</span>
+      <span class="cart-text">Cart</span>
+      <span class="cart-count" id="cart-count">0</span>
+    </div>
+  </div>
+
+  <div class="flavour-grid">
+    <div class="card">
+      <img src="classic.jpeg" alt="classic Blossom image">
+      <div class="card-content">
+        <div class="card-title">Classic Milk Tea</div>
+        <div class="card-description">
+          Black tea with milk and tapioca pearls. The original and most iconic flavor.
+        </div>
+        <div class="card-footer">
+          <span class="price">$5.50</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Taro.jpg" alt="taro Milk image">
+      <div class="card-content">
+        <div class="card-title">Taro Milk Tea</div>
+        <div class="card-description">
+          Made from taro root or taro powder, it’s sweet, creamy, and purple in color.
+        </div>
+        <div class="card-footer">
+          <span class="price">$12.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="matcha.webp" alt="Matcha image">
+      <div class="card-content">
+        <div class="card-title">Matcha Milk Tea</div>
+        <div class="card-description">
+          Earthy and smooth with real matcha,Lightly sweetened for balance.
+        </div>
+        <div class="card-footer">
+          <span class="price">$5.75</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="thai.png" alt="thai image">
+      <div class="card-content">
+        <div class="card-title">Thai Milk Tea</div>
+        <div class="card-description">
+          Bright orange, sweet and spiced, usually made with strong black tea and condensed milk.
+        </div>
+        <div class="card-footer">
+          <span class="price">$10.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="strawberry.jpeg" alt="strawberry image">
+      <div class="card-content">
+        <div class="card-title">Strawberry Milk Tea</div>
+        <div class="card-description">
+          Sweet strawberry meets creamy milk.Fruity, fresh, and fun to sip,a pink drink dream come true.
+        </div>
+        <div class="card-footer">
+          <span class="price">$6.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="mango.jpeg" alt="Mango image">
+      <div class="card-content">
+        <div class="card-title">Mango Milk Tea</div>
+        <div class="card-description">
+          sweet, tropical blend of mango, milk, and tea,creamy and refreshing.
+        </div>
+        <div class="card-footer">
+          <span class="price">$8.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="honeydew.jpg" alt="Honeydew">
+      <div class="card-content">
+        <div class="card-title">Honeydew Milk Tea</div>
+        <div class="card-description">
+          Refreshing and fruity with a melon-forward flavor — light and sweet.
+        </div>
+        <div class="card-footer">
+          <span class="price">$10.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="ube.jpg" alt="ube">
+      <div class="card-content">
+        <div class="card-title">Ube Milk Tea</div>
+        <div class="card-description">
+          Naturally sweet with a nutty twist,Creamy ube blended into silky milk Tea.
+        </div>
+        <div class="card-footer">
+          <span class="price">$6.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="okinawa.webp" alt="okinawa">
+      <div class="card-content">
+        <div class="card-title">Okinawa Milk Tea</div>
+        <div class="card-description">
+          Made with roasted brown sugar from Okinawa, Japan — deep, toasty sweetness.
+        </div>
+        <div class="card-footer">
+          <span class="price">$14.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="brownsugar.jpg" alt="brownsugar">
+      <div class="card-content">
+        <div class="card-title">Brownsugar Milk Tea</div>
+        <div class="card-description">
+          Rich, caramelized flavor with chewy brown sugar boba — a fan favorite.
+        </div>
+        <div class="card-footer">
+          <span class="price">$7.25</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- (Optional) Add more cards here -->
+
+  </div>
+</section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-content">
+        <h3>🌸Tapioca Tales</h3>
+        <h2>Our Sakura Story</h2>
+        <p>Crafted with care, inspired by spring—where every sip feels like a gentle breeze under cherry blossoms.</p>
+    </div>
+    <div class="divider">
+        <div><img src="about.jpg" alt="About Us Image"></div>
+        <div class="content">
+            <p>Founded in 2023, Tapioca Tales was born from a passion for creating delightful boba experiences. Our sakura-themed cafe offers a cozy ambiance where every cup tells a story of tradition and innovation.</p>
+            <p>We source the finest ingredients to craft our signature drinks, ensuring each sip is a journey of flavor and joy. Join us in celebrating the art of boba tea, one bubble at a time.</p>
+            <p>At Tapioca Tales, we believe in the magic of moments shared over a cup of tea. Whether you're catching up with friends or enjoying a quiet moment alone, our sakura-inspired menu is designed to bring a touch of springtime bliss to your day.</p>
+           <div class="about-grid">  
+            <div class="aboutbox"><h3>Gentle Craft</h3>
+              <p>Every drink is a masterpiece, lovingly crafted to bring you joy and comfort.</p>
+            </div>
+            <div class="aboutbox"><h3>Sakura Spirit</h3>
+              <p>A warm palette, soft gradients, and moments worth savoring.</p>
+            </div>
+           </div> 
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-content">
+        <p id="p1">🌸 We'd love to hear from you</p>
+        <h2>Send us a message</h2>
+        <p>Questions, feedback, or just saying hi? Drop us a note below and our friendly team will get back to you.</p>
+
+        <div class="info-box">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong><br>
+              hello@tapiocatale.com
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-paper-plane"></i>
+            <div>
+              <strong>Social</strong><br>
+              @TapiocaTales
+            </div>
+          </div>
+          <p class="info-note">Prefer email? We typically respond within 1–2 business days.</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Your name" required aria-label="Your Name">
+          <input type="email" name="email" placeholder="you@example.com" required aria-label="Your Email">
+          <textarea name="message" rows="5" placeholder="Tell us about your thoughts..." ></textarea>
+          <div>
+            <button >➤ Send message</button>
+            <span class="form-note">We’ll never share your information.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<footer class="footer">
+  <div class="footer-socials">
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <div class="footer-links">
+    <a href="">Flavours</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </div>
+
+  <p class="footer-copy">© 2025 TapiocaTales</p>
+</footer>
+
+  <script>
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.navigation ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+
+ // Cart data
+  let cart = [];
+
+  const cartBtn = document.getElementById("cart-btn");
+  const cartSidebar = document.getElementById("cart-sidebar");
+  const cartItemsContainer = document.getElementById("cart-items");
+  const cartCount = document.getElementById("cart-count");
+  const cartSubtotal = document.getElementById("cart-subtotal");
+  const continueBtn = document.getElementById("continue-btn");
+
+  // Toggle sidebar
+  cartBtn.addEventListener("click", () => {
+    cartSidebar.classList.toggle("active");
+    renderCart();
+  });
+
+  // Continue shopping closes sidebar
+  continueBtn.addEventListener("click", () => {
+    cartSidebar.classList.remove("active");
+  });
+  function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.className = "toast show";
+  setTimeout(() => {
+    toast.className = "toast";
+  }, 2000); // disappears after 2 seconds
+}
+
+  // Add to cart
+  document.querySelectorAll(".add-to-cart").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".card");
+      const name = card.querySelector(".card-title").innerText;
+      const price = parseFloat(card.querySelector(".price").innerText.replace("$",""));
+
+      // Check if already in cart
+      const existingItem = cart.find(item => item.name === name);
+      document.getElementById("empty-cart-image").style.display = "none";
+      if (existingItem) {
+        existingItem.quantity++;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+
+      // Feedback
+      showToast("Added to Cart!");
+      setTimeout(() => btn.innerText = "Add to Cart", 1500);
+
+      updateCart();
+    });
+  });
+
+  function updateCart() {
+    cartCount.innerText = cart.reduce((sum, item) => sum + item.quantity, 0);
+    renderCart();
+  }
+
+  function renderCart() {
+    cartItemsContainer.innerHTML = "";
+    if (cart.length === 0) {
+      document.getElementById("empty-cart-image").style.display = "block";
+      cartItemsContainer.innerHTML = '<p class="empty-message">Your cart is empty.</p>';
+      cartSubtotal.innerText = "Subtotal: $0.00";
+      return;
+    }
+
+    let subtotal = 0;
+    cart.forEach((item, i) => {
+      subtotal += item.price * item.quantity;
+
+      const cartItem = document.createElement("div");
+      cartItem.classList.add("cart-item");
+      cartItem.innerHTML = `
+        <span>${item.name} - $${item.price.toFixed(2)}</span>
+        <div class="quantity-controls">
+          <button onclick="decrementItem(${i})">-</button>
+          <span>${item.quantity}</span>
+          <button onclick="incrementItem(${i})">+</button>
+          <span class="remove-btn" onclick="removeItem(${i})">✖</span>
+        </div>
+      `;
+      cartItemsContainer.appendChild(cartItem);
+    });
+
+    cartSubtotal.innerText = "Subtotal: $" + subtotal.toFixed(2);
+  }
+
+  // Quantity functions
+  function incrementItem(i) {
+    cart[i].quantity++;
+    updateCart();
+  }
+  function decrementItem(i) {
+    cart[i].quantity--;
+    if (cart[i].quantity <= 0) cart.splice(i,1);
+    updateCart();
+  }
+  function removeItem(i) {
+    cart.splice(i,1);
+    updateCart();
+  }
+
+
+
+
+  //form validation
+  const form = document.querySelector(".contact-form form");
+  form.addEventListener("submit", function(event) {
+    const name = form.elements["name"].value.trim();
+    const email = form.elements["email"].value.trim();
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (name === "" || email === "") {
+      event.preventDefault();
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    if (!email.match(emailPattern)) {
+      event.preventDefault();
+      alert("Please enter a valid email address.");
+      return;
+    }
+   
+    event.preventDefault(); 
+     showToast("Message sent! We'll get back to you soon.");
+      form.reset();
+    });
+   
+
+  </script>
+
+</body>
+</html>
